@@ -1,0 +1,169 @@
+/* Reset and general styles */
+body, html {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Georgia', serif;
+  background-color: #fbf9f4; /* Consistent background */
+  color: #333;
+  font-size: 20px;
+}
+
+.container {
+  transform: scale(.8);
+  transform-origin: top center;
+  display: flex;
+  height: 103vh;
+}
+hr.solid {
+  border-top: 2px solid #070707;
+  margin-top: 0;
+
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 350px;
+  background-color: #fbf9f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  margin-top: 0; /* Remove negative margin */
+}
+
+
+/* Logo styling */
+.logo img {
+  width: 250px;
+  height: auto;
+  margin-bottom: -60px;
+
+}
+
+/* Navigation styling */
+.nav-links {
+  list-style-type: none;
+  top-padding: 10 ;
+  width: 80%;
+  text-align: left;
+}
+
+.nav-links li {
+  margin: 20px 0px;
+  font-size: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: #82211684;
+}
+
+
+
+.profile-pic {
+  margin-top: 15px; /* Adjust spacing */
+
+}
+
+.profile-pic img {
+  width: 280px; /* Increased size */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Main content */
+.content {
+  flex: 1;
+  padding: 110px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* About section */
+.about {
+  max-width: 900px;
+  text-align: left;
+}
+
+.about h1 {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #2d2d2d;
+}
+
+.about p {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.about p:last-child {
+  font-style: italic;
+  margin-top: 25px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    align-items: top;
+    padding-bottom: 20px;
+  }
+
+  .nav-links {
+    text-align: center;
+  }
+
+  .nav-divider {
+      width: 60%; /* Adjust width for smaller screens */
+      height: 2px;
+      background-color: #0b0b0b;
+      margin: 15px auto; /* Center it */
+      display: block;
+      visibility: visible !important;
+  }
+  
+  
+
+  .profile-pic {
+    text-align: center;
+  }
+
+  .profile-pic img {
+    width: 180px;
+    height: 200px;
+  }
+
+  .content {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .about {
+    max-width: 100%;
+  }
+
+  .about h1 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+}
